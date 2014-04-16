@@ -1,0 +1,13 @@
+{
+    "source": {
+	"include": ["README.md","servicenow.js"]
+    },
+    "opts": {
+	"destination": "./api/",
+	"verbose": true
+    },
+    "plugins": ["plugins/markdown"],
+    "markdown": {
+	"parser": "evilstreak"
+    }
+}

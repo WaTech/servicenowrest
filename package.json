@@ -1,0 +1,22 @@
+{
+  "name": "servicenow",
+  "version": "0.5.0",
+  "description": "Wrapper library to ServiceNow's JSON/REST plugin",
+  "main": "servicenow.js",
+  "license" : "GPLv3",
+  "repository" : { 
+    "type" : "git",
+    "url" : "https://github.com/WA-OCIO/servicenowrest.git"
+  },
+  "dependencies": {
+    "querystring": "~0.2.0",
+    "request": "~2.34.0"
+  },
+  "devDependencies": {
+    "jake": "~0.7.7",
+    "async": "~0.2.10",
+    "jsdoc": "~3.3.0-alpha4",
+    "jake-jshint": "0.0.4",
+    "temp": "~0.7.0"
+  }
+}
