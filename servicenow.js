@@ -283,13 +283,18 @@ Client.prototype.deleteMultiple = function(table,query,callback) {
  * @private
  */
 function restCallbackHandler(err,response,body,callback) {
-    var error = jsonServiceErrorProcessor(err,response,body);
-    if(error) {
-        callback(error);
+    var o = {};
+    try {
+        var error = jsonServiceErrorProcessor(err,response,body);
+        if(error) {
+            callback(error);
+            return;
+        }
+        o = JSON.parse(body);
+    } catch (ex) {
+        callback(ex);
         return;
-    }
-    var o = JSON.parse(body);
-    
+    } 
     callback(null,o);
 }
 
