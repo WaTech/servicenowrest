@@ -3,7 +3,7 @@
   "version": "0.5.0",
   "description": "Wrapper library to ServiceNow's JSON/REST plugin",
   "main": "servicenow.js",
-  "license" : "GPLv3",
+  "license" : "GPL-3.0",
   "repository" : { 
     "type" : "git",
     "url" : "https://github.com/WA-OCIO/servicenowrest.git"
